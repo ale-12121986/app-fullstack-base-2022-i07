@@ -1,0 +1,22 @@
+.custom-button {
+
+    width: 100%; /* Ajusta este valor según tus preferencias */
+    margin-bottom: 5px; /* Espacio entre los botones */
+  }
+  .center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Ajusta esto para controlar la altura del cuadro centrado */
+    border: 2px solid #000; /* Añade un borde sólido de 2px en color negro */
+    padding: 20px; /* Añade un espacio interno alrededor del cuadro */
+    max-width: 500px; /* Ajusta esto según el ancho deseado */
+  }
+  .center-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  

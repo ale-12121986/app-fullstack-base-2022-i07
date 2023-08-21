@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>listaSensor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">listaSensor</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let objeto of medicion" >
+        <ion-icon  name="thermometer"></ion-icon>
+        <ion-label>
+          <h3>fecha: {{ objeto.fecha|date:'dd/MM/yyyy' }} - Medicion: {{ objeto.valor }}</h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-button class="custom-button" [routerLink] = "['/sensor',id]">Volver</ion-button>
+  </ion-content>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>sensor</ion-title>
+  </ion-toolbar>
+  <button (click)="unsubscribe()">Unsub</button>
+  <br>
+  <button (click)="subscribe()">Sub</button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">sensor</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="center-screen">
+      <div class="center-box">
+        <div id="highcharts" style="width:100%; height:300px;"></div>
+        <ion-button class="custom-button" (click)="toggleValor()" >{{textoBoton}}</ion-button>
+        <br>
+        <ion-button class="custom-button" [routerLink] = "['/lista-sensor',id]">Ver todas las mediciones</ion-button>
+        <br>
+        <ion-button class="custom-button" [routerLink] = "['/lista-riegos',id]">Ver los riegos</ion-button>
+      </div>
+    </div>
+  </ion-content>
+</ion-content>
